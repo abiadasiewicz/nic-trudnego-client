@@ -14,7 +14,6 @@
 // hue. Available color palettes: https://material.io/design/color/
 $nic-trudnego-client-primary: mat.define-palette(mat.$indigo-palette);
 $nic-trudnego-client-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
-
 // The warn palette is optional (defaults to red).
 $nic-trudnego-client-warn: mat.define-palette(mat.$red-palette);
 
@@ -40,6 +39,10 @@ $nic-trudnego-client-theme: mat.define-light-theme((
 $darkblue: rgb(0, 0, 90);
 $blue: rgba($darkblue, 0.9);
 $lightblue: rgb(0, 0, 200);
+
+* {
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
 
 .yellow-box {
   background-color: #CCF5E7;
@@ -156,4 +159,4 @@ img {
 
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: 'Helvetica', 'Arial', sans-serif}
