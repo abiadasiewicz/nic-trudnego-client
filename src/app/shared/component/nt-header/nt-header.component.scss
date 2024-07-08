@@ -1,6 +1,6 @@
 :host {
   .navbar {
-    height: 80px;
+    min-height: 80px;
     box-shadow: 0 5px 10px var(--nt-accent-shadow);
 
     .bi-journal-medical {
@@ -19,16 +19,20 @@
       margin: 0 8px;
     }
 
+    .navbar-toggler {
+      border: none;
+      &:focus{
+        -webkit-box-shadow: none;
+      }
+        i {
+          color: var(--nt-text-primary);
+          font-size: 36px;
+      }
+    }
+
     button {
       margin: 0 4px;
       padding: 4px 16px;
-    }
-
-    .buttons-container {
-      i {
-        margin-right: 8px;
-      }
-
     }
   }
 }

@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  padding: 24px;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+
+    .field {
+      width: 100%;
+    }
+
+    .textarea {
+      height: 250px;
+    }
+  }
+}

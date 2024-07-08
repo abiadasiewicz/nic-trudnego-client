@@ -1,16 +1,27 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <div class="d-flex">
+        <i class="bi bi-journal-medical text-primary"></i>
+        <hr class="vertical-line cherry"/>
+        <div class="navbar-brand fw-bolder px-2 darkblue">Nic trudnego!</div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list closed"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <div class="d-flex align-items-center">
-        <i class="bi bi-journal-medical text-primary"></i>
-        <hr class="vertical-line cherry" />
-        <a class="navbar-brand fw-bolder darkblue" href="#">HealthHub</a>
-        <a class="nav-link" aria-current="page" [routerLink]="'/'" routerLinkActive="active">O mnie</a>
-        <a class="nav-link" [routerLink]="'/uslugi'" routerLinkActive="active">Usługi</a>
-        <a class="nav-link" [routerLink]="'/cennik'" routerLinkActive="active">Cennik</a>
-        <a class="nav-link" [routerLink]="'/kontakt'" routerLinkActive="active">Kontakt</a>
-      </div>
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" aria-current="page" [routerLink]="'/'"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active">O mnie</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="'/uslugi'" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active">Usługi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="'/cennik'" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active">Cennik</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="'/kontakt'" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active">Kontakt</a>
+            </li>
+        </ul>
     </div>
-  </nav>
+</nav>
