@@ -1,0 +1,29 @@
+:root {
+  $black: #141718;
+  $white: #ffffff;
+  $gray-primary: #525252;
+  $gray-secondary: #707374;
+  $gray-60: #888b8d;
+  $disable-gray: #ebebeb;
+  $gray-40: #eaeaf1;
+  $gray-20: #f4f4f4;
+  $blue-primary: #00005ae6;
+  $blue-secondary: #0d7cbc;
+  $deco-blue: #e0e4fd;
+  $blue-80: #F0F8FFFF;
+  $blue-20: #fbfbff;
+
+  $variables: (
+          background-page: $blue-80,
+          background-primary: $deco-blue,
+          accent-black: $black,
+          accent-shadow: $gray-60,
+
+          text-primary: $blue-primary,
+
+  );
+
+  @each $color, $value in $variables {
+    --nt-#{$color}: #{$value};
+  }
+}
