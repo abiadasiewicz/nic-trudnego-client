@@ -1,7 +1,13 @@
+@import '../../../assets/custom-styles/breakpoints.scss';
+
 :host {
   .navbar {
     min-height: 80px;
     box-shadow: 0 5px 10px var(--nt-accent-shadow);
+
+    i, .navbar-brand {
+      color: var(--nt-text-primary);
+    }
 
     .bi-journal-medical {
       padding: 0 16px;
@@ -12,7 +18,10 @@
       border: none;
       border-left: 2px solid;
       height: 44px;
+      width: 4px;
       margin: 0 8px;
+      opacity: 0.75;
+      color: var(--nt-accent);
     }
 
     a {
@@ -21,6 +30,10 @@
 
     .nav-link {
       position: relative;
+      color: var(--nt-text-secondary);
+      width: fit-content;
+      font-size: 20px;
+
       &.active:after {
         content: '';
         position: absolute;
@@ -28,8 +41,12 @@
         bottom: -8px;
         width: 100%;
         height: 4px;
-        background-color: var(--nt-accent-primary);
+        background-color: var(--nt-accent);
         border-radius: 6px;
+
+        @media screen and (max-width: map-get($breakpoints, lg)) {
+          bottom: 0;
+        }
       }
     }
 

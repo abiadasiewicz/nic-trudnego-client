@@ -7,21 +7,22 @@
   $disable-gray: #ebebeb;
   $gray-40: #eaeaf1;
   $gray-20: #f4f4f4;
-  $blue-primary: #00005ae6;
-  $blue-secondary: #0d7cbc;
-  $deco-blue: #e0e4fd;
-  $blue-80: #F0F8FFFF;
-  $blue-20: #fbfbff;
+  $cherry-primary: #EA6D6DE5;
+  $red: #ff0016;
+  $orange-primary: #ff7500;
+  $orange-secondary: #fa8e3d;
+  $orange-80: #E39060CC;
+  $orange-40: rgba(241, 201, 178, 0.4);
+  $orange-20: #F3DED233;
 
   $variables: (
-          background-page: $blue-80,
-          background-primary: $deco-blue,
+          background-page: $orange-20,
+          background-primary: $orange-40,
           accent-black: $black,
           accent-shadow: $gray-60,
-
-          accent-primary: $blue-primary,
-          text-primary: $blue-primary,
-
+          text-primary: $orange-primary,
+          text-secondary: $orange-secondary,
+          accent: $red,
   );
 
   @each $color, $value in $variables {
