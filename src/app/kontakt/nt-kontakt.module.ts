@@ -5,7 +5,6 @@ import { NtKontaktRoutingModule } from './nt-kontakt-routing.module';
 import {NtEmailFormComponent} from './component/nt-email-form/nt-email-form.component';
 import { NtKontaktComponent } from './component/nt-kontakt/nt-kontakt.component';
 import {ReactiveFormsModule} from '@angular/forms';
-import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -13,8 +12,7 @@ import {MatInputModule} from '@angular/material/input';
   imports: [
     CommonModule,
     NtKontaktRoutingModule,
-    ReactiveFormsModule,
-    MatInputModule
+    ReactiveFormsModule
   ]
 })
 export class NtKontaktModule { }
