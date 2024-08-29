@@ -1,0 +1,32 @@
+:host {
+  section {
+    margin: 48px auto;
+
+
+    &.bordered {
+      padding: 16px;
+      border: solid 1px black;
+      border-radius: 20px;
+      box-shadow: 10px 10px 10px rgba(128, 130, 132, 0.5);
+      background-color: white;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: 64px;
+    }
+
+    p {
+      font-size: 20px;
+      text-align: justify;
+    }
+
+    ol {
+      list-style-type: circle;
+    }
+
+    &.first {
+      border-radius: 15px;
+    }
+  }
+}

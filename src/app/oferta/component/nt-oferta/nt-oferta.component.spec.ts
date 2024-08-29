@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NtUslugiComponent } from './nt-uslugi.component';
+import { NtOfertaComponent } from './nt-oferta.component';
 
-describe('NtUslugiComponent', () => {
-  let component: NtUslugiComponent;
-  let fixture: ComponentFixture<NtUslugiComponent>;
+describe('NtOfertaComponent', () => {
+  let component: NtOfertaComponent;
+  let fixture: ComponentFixture<NtOfertaComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NtUslugiComponent]
+      declarations: [NtOfertaComponent]
     });
-    fixture = TestBed.createComponent(NtUslugiComponent);
+    fixture = TestBed.createComponent(NtOfertaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
