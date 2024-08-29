@@ -37,7 +37,8 @@ $nic-trudnego-client-theme: mat.define-light-theme((
 @import 'app/assets/custom-styles/color-variables.scss';
 
 * {
-  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-family: "Merriweather Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
 html, body { height: 100%; }
