@@ -1,44 +1,27 @@
-<section class="container">
-    <section class="about">
-        <h1 class="primary">Weronika Biadasiewicz</h1>
-        <h1 class="secondary">Neurologopedia</h1>
-        <p class="description">Pomogę Tobie lub Twojemu dziecku mówić poprawnie stosując najlepsze do tego metody!</p>
-        <button><a [routerLink]="'/kontakt'">Skontaktuj się</a></button>
-        <button><a href="#second">Dowiedz się więcej</a></button>
+<section class="container about-section">
+    <div class="about">
+        <div class="text-container">
+            <h1 class="primary">Weronika Biadasiewicz</h1>
+            <h1 class="secondary">Neurologopeda</h1>
+            <p class="description">Pomogę Tobie lub Twojemu dziecku mówić poprawnie stosując najlepsze do tego
+                metody. Przez zabawę, z dobrą atmosferą i pełnią uśmiechu.</p>
+            <p class="description">Szukasz profesjonalnej opieki logopedycznej?</p>
+            <div class="button-container d-flex justify-content-around">
+                <button class="primary"><a [routerLink]="'/kontakt'">Skontaktuj się</a></button>
+                <button class="secondary" (click) = "scrollToCoursesSection()">Dowiedz się więcej</button>
+            </div>
+        </div>
+        <div class="photos-container">
+            <img src="./assets/img/zdjecie.png" alt="Zdjęcie 1" class="image image-1">
+            <img src="./assets/img/zdjecie.png" alt="Zdjęcie 1" class="image image-2">
+        </div>
+    </div>
+</section>
 
+<section id="courses" class="courses">
+    <section class="container detailed">
+        <h1>Pomogę Ci z blabla bla coś o <span>kursach</span> w różnych kolorkach</h1>
+        <nt-carousel [items]="kursy"></nt-carousel>
     </section>
-    <section id="second"></section>
-    <!--    <section class="bordered first">-->
-    <!--        <h1>Weronika Biadasiewicz</h1>-->
-    <!--        <p>Jestem absolwentką studiów I stopnia z Terapii Zajęciowej oraz studiów magisterskich z Logopedii ze-->
-    <!--            specjalnością-->
-    <!--            z neurologopedii oraz wczesnej interwencji logopedycznej. Doświadczenie zdobywałam pracując w przedszkolach-->
-    <!--            oraz-->
-    <!--            w prywatnym gabinecie logopedycznym. Jestem również terapeutą ręki.</p>-->
-    <!--        <p>Prowadzę zajęcia przede wszystkim z dziećmi z dyslalią (wadami wymowy), opóźnionym rozwojem mowy oraz-->
-    <!--            spektrum-->
-    <!--            autyzmu, a także z zaburzeniami funkcji prymarnych – nieprawidłową pozycją spoczynkową języka, ustnym torem-->
-    <!--            oddechowym czy nieprawidłowym sposobem połykania. Zajmuję się również terapią wybiórczości pokarmowej. Do-->
-    <!--            uczestnictwa w terapii zapraszam również osoby dorosłe z różnymi trudnościami w zakresie komunikacji i-->
-    <!--            wymowy.</p>-->
-    <!--    </section>-->
-    <!--    <section class="bordered second">-->
-    <!--        <h1>Kursy</h1>-->
-    <!--        <p>Ukończyłam następujące kursy: </p>-->
-    <!--        <ol>-->
-    <!--            <li>Ocena funkcjonalna traktu ustno-twarzowego. Mioterapia – podejście autorskie</li>-->
-    <!--            <li>Strategiczna metoda usprawniania realizacji fonemów w dyslalii obwodowej SMURF</li>-->
-    <!--            <li>Masaż logopedyczny i terapia manualna kompleksu ustno-twarzowego w praktyce. Holistyczny program-->
-    <!--                wsparcia-->
-    <!--                pacjenta z wyzwaniami-->
-    <!--            </li>-->
-    <!--            <li>Komunikacja alternatywna i wspomagająca</li>-->
-    <!--            <li>Terapia ręki I i II stopnia. Diagnoza terapia warsztat</li>-->
-    <!--            <li>Terapia ręki III stopnia. Grafomotoryka</li>-->
-    <!--            <li>Psychomotoryka empowermentu</li>-->
-    <!--            <li>Metoda Ruchu Rozwijającego Weroniki Sherborne</li>-->
-    <!--            <li>Arteterapia sensoryczno-motoryczna PWUPS <sup>©</sup> poziom I</li>-->
-    <!--        </ol>-->
-    <!--    </section>-->
 </section>
 

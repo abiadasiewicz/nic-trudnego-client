@@ -1,0 +1,15 @@
+<div class="card">
+    <p-carousel [value]="items"
+                [numVisible]="3" [numScroll]="1"
+                [circular]="true" [autoplayInterval]="3000"
+                [responsiveOptions]="responsiveOptions">
+        <ng-template let-item pTemplate="item">
+            <div class="description first">
+                {{ item.firstDescription }}
+            </div>
+            <div *ngIf="item.secondDescription" class="description second">
+                {{ item.secondDescription }}
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

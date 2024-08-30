@@ -1,6 +1,8 @@
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.scss';
-@import 'app/assets/custom-styles/color-variables.scss';
+@import 'assets/custom-styles/color-variables.scss';
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
 
 $darkblue: rgb(0, 0, 90);
 $blue: rgba($darkblue, 0.9);
@@ -13,18 +15,6 @@ $lightblue: rgb(0, 0, 200);
 
 .container.py-5 {
   max-width: 1180px;
-}
-
-h1 {
-  color: #D56062;
-  width: fit-content;
-}
-
-p {
-  color: #D56062;
-}
-ol {
-  color: #D56062;
 }
 
 
