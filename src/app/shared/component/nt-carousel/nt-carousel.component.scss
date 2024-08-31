@@ -1,0 +1,94 @@
+:host {
+  display: block;
+
+  .card {
+    background-color: transparent;
+    border: none;
+    height: 100%;
+
+    .p-element {
+      height: 100%;
+
+      ::ng-deep.p-carousel {
+        height: 100% !important;
+
+        ::ng-deep.p-carousel-content {
+          height: 100% !important;
+
+          .p-carousel-container {
+            padding-top: 60px;
+            height: 60% !important;
+
+            button {
+              &.p-ripple {
+                background-color: transparent;
+
+                .carousel-prev-icon {
+                  width: 48px;
+                  height: 48px;
+                  color: rgba(246, 189, 166, 0.7);
+                  transition: 0.5s;
+
+                  &:hover {
+                    color: rgba(243, 130, 87, 0.7);
+                    transition: 0.5s;
+                  }
+                }
+              }
+            }
+          }
+
+          .p-carousel-indicators {
+            padding-top: 120px;
+          }
+
+          .p-carousel-indicator {
+
+            button {
+              background-color: white;
+              border-radius: 8px;
+              width: 60px;
+              height: 3px;
+              background-color: rgba(246, 189, 166, 0.7);
+            }
+
+            &.p-highlight {
+              button {
+                background-color: rgba(243, 130, 87, 0.7);
+              }
+            }
+          }
+
+          .p-carousel-container {
+            height: 100%;
+          }
+
+          .p-carousel-items-container {
+            height: 100%;
+
+            .p-carousel-item {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+
+    div.description {
+      width: 80%;
+      height: 50%;
+      text-align: center;
+      font-style: italic;
+      vertical-align: middle;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #7c3f00c2;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+}

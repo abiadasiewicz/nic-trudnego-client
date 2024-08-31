@@ -1,7 +1,67 @@
-<section><h1>Elo mordeczki nazywam się Werka i jestem spoko</h1>
-<p>a tutaj coś o sobie może napiszę nie wiadomo</p>
+<section class="container about-section">
+    <div class="about">
+        <div class="text-container">
+            <h1 class="primary">Weronika Biadasiewicz</h1>
+            <h1 class="secondary">Neurologopeda</h1>
+            <p class="description">Pomogę Tobie lub Twojemu dziecku mówić poprawnie stosując najlepsze do tego
+                metody. Przez zabawę, z dobrą atmosferą i pełnią uśmiechu.</p>
+            <p class="description">Szukasz profesjonalnej opieki logopedycznej?</p>
+            <div class="button-container d-flex justify-content-around">
+                <button class="primary"><a [routerLink]="'/kontakt'">Skontaktuj się</a></button>
+                <button class="secondary" (click)="scrollToCoursesSection()">Dowiedz się więcej</button>
+            </div>
+        </div>
+        <div class="photos-container">
+            <img src="./assets/img/zdjecie.png" alt="Zdjęcie 1" class="image image-1">
+            <img src="./assets/img/zdjecie.png" alt="Zdjęcie 1" class="image image-2">
+        </div>
+    </div>
 </section>
-<section><h1>Elo mordeczki tutaj moje kursiki</h1>
-    <a href="tel:+48607611615">607 611 615</a>
-    <p>Jestem przekoksem, co tu dużo mówić</p>
+
+<section id="courses" class="courses">
+    <section class="container detailed">
+        <h1>Pomogę Ci z blabla bla coś o <span>kursach</span> w różnych kolorkach</h1>
+        <nt-carousel [items]="kursy"></nt-carousel>
+    </section>
+</section>
+<section class="more-info-section">
+    <section class="more-info container">
+        <div>
+            <div class="first-part content">
+                <h1 class="primary">Kim jestem?</h1>
+                <p class="description">Jestem absolwentką studiów I stopnia z Terapii Zajęciowej oraz studiów
+                    magisterskich
+                    z
+                    Logopedii ze specjalnością z neurologopedii oraz wczesnej interwencji logopedycznej. Doświadczenie
+                    zdobywałam
+                    pracując w przedszkolach oraz w prywatnym gabinecie logopedycznym. Jestem również terapeutą ręki.
+                    Prowadzę zajęcia przede wszystkim z dziećmi z dyslalia (wadami wymowy), opóźnionym rozwojem mowy
+                    oraz
+                    spektrum
+                    autyzmu, a także z zaburzeniami funkcji prymarnych – nieprawidłową pozycją spoczynkową języka,
+                    ustnym
+                    torem
+                    oddechowym czy nieprawidłowym sposobem połykania. Zajmuję się również terapią wybiórczości
+                    pokarmowej.
+                    Do
+                    uczestnictwa w terapii zapraszam również osoby dorosłe z różnymi trudnościami w zakresie komunikacji
+                    i
+                    wymowy.
+                </p>
+            </div>
+            <div class="second-part content">
+                <h1 class="primary">Co robię?</h1>
+                <p class="description">Prowadzę zajęcia przede wszystkim z dziećmi z dyslalia (wadami wymowy),
+                    opóźnionym
+                    rozwojem
+                    mowy oraz spektrum autyzmu, a także z zaburzeniami funkcji prymarnych – nieprawidłową pozycją
+                    spoczynkową
+                    języka, ustnym torem oddechowym czy nieprawidłowym sposobem połykania. Zajmuję się również terapią
+                    wybiórczości
+                    pokarmowej. Do uczestnictwa w terapii zapraszam również osoby dorosłe z różnymi trudnościami w
+                    zakresie
+                    komunikacji i wymowy.</p>
+            </div>
+        </div>
+    </section>
 </section>

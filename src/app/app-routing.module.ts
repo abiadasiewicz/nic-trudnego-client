@@ -14,9 +14,9 @@ export const appRoutes: Routes = [
         loadChildren: () =>
             import('./main-page/nt-main-page.module').then((module) => module.NtMainPageModule),
     }, {
-        path: 'uslugi',
+        path: 'oferta',
         loadChildren: () =>
-            import('./uslugi/nt-uslugi.module').then((module) => module.NtUslugiModule),
+            import('./oferta/nt-oferta.module').then((module) => module.NtOfertaModule),
     },{
         path: 'cennik',
         loadChildren: () =>
