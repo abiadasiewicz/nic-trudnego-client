@@ -8,7 +8,7 @@
             <p class="description">Szukasz profesjonalnej opieki logopedycznej?</p>
             <div class="button-container d-flex justify-content-around">
                 <button class="primary"><a [routerLink]="'/kontakt'">Skontaktuj się</a></button>
-                <button class="secondary" (click) = "scrollToCoursesSection()">Dowiedz się więcej</button>
+                <button class="secondary" (click)="scrollToCoursesSection()">Dowiedz się więcej</button>
             </div>
         </div>
         <div class="photos-container">
@@ -24,4 +24,44 @@
         <nt-carousel [items]="kursy"></nt-carousel>
     </section>
 </section>
-
+<section class="more-info-section">
+    <section class="more-info container">
+        <div>
+            <div class="first-part content">
+                <h1 class="primary">Kim jestem?</h1>
+                <p class="description">Jestem absolwentką studiów I stopnia z Terapii Zajęciowej oraz studiów
+                    magisterskich
+                    z
+                    Logopedii ze specjalnością z neurologopedii oraz wczesnej interwencji logopedycznej. Doświadczenie
+                    zdobywałam
+                    pracując w przedszkolach oraz w prywatnym gabinecie logopedycznym. Jestem również terapeutą ręki.
+                    Prowadzę zajęcia przede wszystkim z dziećmi z dyslalia (wadami wymowy), opóźnionym rozwojem mowy
+                    oraz
+                    spektrum
+                    autyzmu, a także z zaburzeniami funkcji prymarnych – nieprawidłową pozycją spoczynkową języka,
+                    ustnym
+                    torem
+                    oddechowym czy nieprawidłowym sposobem połykania. Zajmuję się również terapią wybiórczości
+                    pokarmowej.
+                    Do
+                    uczestnictwa w terapii zapraszam również osoby dorosłe z różnymi trudnościami w zakresie komunikacji
+                    i
+                    wymowy.
+                </p>
+            </div>
+            <div class="second-part content">
+                <h1 class="primary">Co robię?</h1>
+                <p class="description">Prowadzę zajęcia przede wszystkim z dziećmi z dyslalia (wadami wymowy),
+                    opóźnionym
+                    rozwojem
+                    mowy oraz spektrum autyzmu, a także z zaburzeniami funkcji prymarnych – nieprawidłową pozycją
+                    spoczynkową
+                    języka, ustnym torem oddechowym czy nieprawidłowym sposobem połykania. Zajmuję się również terapią
+                    wybiórczości
+                    pokarmowej. Do uczestnictwa w terapii zapraszam również osoby dorosłe z różnymi trudnościami w
+                    zakresie
+                    komunikacji i wymowy.</p>
+            </div>
+        </div>
+    </section>
+</section>

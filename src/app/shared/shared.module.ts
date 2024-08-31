@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {NtFooterComponent} from './component/nt-footer/nt-footer.component';
 import {NtHeaderComponent} from './component/nt-header/nt-header.component';
 import {RouterLink, RouterLinkActive} from '@angular/router';
@@ -17,7 +17,8 @@ import {TagModule} from 'primeng/tag';
         RouterLink,
         RouterLinkActive,
         CarouselModule,
-        TagModule
+        TagModule,
+        NgOptimizedImage
     ],
     exports: [NtHeaderComponent, NtFooterComponent, NtBorderedFieldComponent, NtPageNotFoundComponent, NtCarouselComponent]
 })
