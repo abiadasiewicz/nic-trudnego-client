@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { NtOMnieComponent } from './component/nt-omnie/nt-omnie.component';
 import { NtMainPageRoutingModule } from './nt-main-page.routing.module';
 import { SharedModule } from '../shared/shared.module';
@@ -14,7 +14,8 @@ import { SharedModule } from '../shared/shared.module';
     imports: [
         CommonModule,
         NtMainPageRoutingModule,
-        SharedModule
+        SharedModule,
+        NgOptimizedImage
     ]
 })
 export class NtMainPageModule {

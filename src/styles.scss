@@ -4,10 +4,6 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
-$darkblue: rgb(0, 0, 90);
-$blue: rgba($darkblue, 0.9);
-$lightblue: rgb(0, 0, 200);
-
 * {
   font-family: 'Merriweather Sans', sans-serif;
   font-optical-sizing: auto;
@@ -17,6 +13,12 @@ $lightblue: rgb(0, 0, 200);
   max-width: 1180px;
 }
 
+.sharpen {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor;
+}
 
 html,
 body {
