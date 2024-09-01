@@ -18,11 +18,20 @@ $lightblue: rgb(0, 0, 200);
 }
 
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
 body {
   margin: 0;
   font-family: 'Merriweather Sans', sans-serif;
+}
+
+h1.primary {
+  color: var(--nt-text-black);
+}
+
+p {
+  color: var(--nt-text-primary);
 }

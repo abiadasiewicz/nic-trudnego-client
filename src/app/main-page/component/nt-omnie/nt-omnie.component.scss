@@ -8,18 +8,17 @@
     }
 
     h1.secondary {
-      color: #F37748;
+      color: var(--nt-text-primary);
       padding-bottom: 24px;
     }
 
     p {
       font-size: 14px;
-      color: #f38257
     }
 
     &.bordered {
       padding: 16px;
-      border: solid 1px black;
+      border: solid 1px var(--nt-text-black);
       border-radius: 20px;
       box-shadow: 10px 10px 10px rgba(128, 130, 132, 0.5);
       background-color: white;
@@ -46,6 +45,8 @@
 
         .button-container {
           padding-top: 20px;
+          display: flex;
+          justify-content: space-around;
 
           button {
             all: unset;
@@ -63,7 +64,7 @@
 
             &.primary {
               position: relative;
-              background-color: #f35e23;
+              background-color: var(--nt-text-highlight);
               border-radius: 10px;
 
               transition: all 0.2s linear 0s;
@@ -92,6 +93,10 @@
               &:hover {
                 text-indent: 30px;
 
+                @media screen and (max-width: 576px) {
+                  text-indent: 0;
+                }
+
                 &:before {
                   transform: scale(1, 1);
                   text-indent: 0;
@@ -107,13 +112,13 @@
             &.secondary {
               position: relative;
               transition: all 0.2s linear 0s;
-              color: #f35e23;
+              color: var(--nt-text-highlight);
 
               &:before {
                 content: '\F128';
                 font-family: 'Bootstrap-icons', serif;
                 font-weight: 600;
-                color: #f35e23;
+                color: var(--nt-text-highlight);
                 position: absolute;
                 display: flex;
                 align-items: center;
@@ -135,6 +140,16 @@
                   text-indent: 0;
                 }
               }
+
+            }
+
+
+            @media screen and (max-width: 992px) {
+              transition: none;
+
+              &:before {
+                content: none !important;
+              }
             }
           }
         }
@@ -146,8 +161,10 @@
 
         .image {
           position: absolute;
-          max-width: 350px;
-          height: auto;
+          // width: 400px !important;
+          // height: 464px !important;
+          // height: auto;
+          // width: auto;
           border-radius: 5px;
         }
 
@@ -197,6 +214,22 @@
           }
         }
       }
+
+      @media screen and (max-width: 576px) {
+        flex-direction: column;
+
+        .button-container {
+          flex-direction: column;
+
+          button {
+            width: 100% !important;
+
+            &.primary {
+              margin-bottom: 12px !important;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -212,8 +245,8 @@
       z-index: -1;
       width: 100%;
       height: 100%;
-      background-image: url('/assets/img/tlo1.png');
       background-size: cover;
+      background-color: var(--nt-background-red-primary);
     }
 
     .detailed {
@@ -222,8 +255,7 @@
         max-width: 600px;
 
         span {
-          //color: #cf4c4e;
-          color: #f35e23;
+          color: var(--nt-text-highlight);
         }
       }
 
@@ -265,6 +297,7 @@
 
       h1 {
         text-align: end;
+
         @media screen and (max-width: 992px) {
           text-align: start;
         }
@@ -272,6 +305,3 @@
     }
   }
 }
-
-
-

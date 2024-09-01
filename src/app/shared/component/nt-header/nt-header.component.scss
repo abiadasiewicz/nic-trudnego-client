@@ -10,10 +10,9 @@
     justify-content: space-between;
 
     .logo {
-      //min-height: 64px;
       height: auto;
       align-items: center;
-      padding-right: 64px;
+      padding-right: 16px;
 
       img {
         max-width: 360px;
@@ -50,7 +49,9 @@
     .navbar-collapse {
       justify-content: flex-end;
 
-      ul {
+
+      .navbar-nav {
+        padding: 0 16px;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -62,11 +63,12 @@
         align-items: center;
 
         .nav-link {
+          padding: 0;
           font-weight: bold;
-          color: #f35e23;
+          color: var(--nt-text-primary);
 
           &.active {
-            color: black;
+            color: var(--nt-text-black);
           }
         }
       }
@@ -81,7 +83,7 @@
 
       span {
         display: block;
-        background-color: #F37748;
+        background-color: var(--nt-text-primary);
         height: 3px;
         width: 25px;
         margin-top: 5px;
@@ -130,9 +132,9 @@
   }
 
 
-  @media screen and (max-width: 991px) {
+  @media screen and (max-width: 992px) {
     .navbar {
-      border-bottom: 1px solid #f35e23;
+      border-bottom: 1px solid var(--nt-text-primary);
 
       .logo {
         padding-right: 0;
@@ -151,6 +153,7 @@
       .navbar-collapse {
         .navbar-nav {
           max-width: unset;
+          padding: 0;
 
           li {
             font-size: 28px;
