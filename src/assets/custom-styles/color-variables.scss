@@ -12,6 +12,10 @@
 
   $gray-primary: #F2F2F2;
 
+  $gray-dark: rgb(82, 82, 82);
+
+  $gray-white: rgba(182, 182, 182, 0.11);
+
   $variables: (
     text-primary: $red-primary,
     text-highlight: $red-highlight,
@@ -23,6 +27,8 @@
     text-black: $black-primary,
     white: $white-primary,
     background-gray: $gray-primary,
+
+    gray-text: $gray-dark,
   );
 
 @each $color, $value in $variables {

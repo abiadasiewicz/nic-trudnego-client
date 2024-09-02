@@ -12,6 +12,11 @@
     h1.primary {
       padding-top: 64px;
       font-weight: bold;
+
+      @media screen and (max-width: 992px) {
+        padding-top: 0 !important;
+
+      }
     }
 
     h1.secondary {
@@ -49,12 +54,13 @@
         bottom: 0;
         right: 0;
         height: 100%;
-        background: linear-gradient(to left, white 0, 2%, transparent 30%, rgba(255, 255, 255) 60%,);
+        background: linear-gradient(to left, white 0, 2%, transparent 30%, rgba(255, 255, 255) 60%, );
         z-index: -1;
 
         @media screen and (max-width: 1400px) {
           background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255) 50%);
         }
+
         @media screen and (max-width: 1400px) {
           background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255) 50%);
         }
@@ -103,7 +109,7 @@
               position: relative;
               background-color: var(--nt-text-highlight);
               border-radius: 10px;
-
+              color: white;
               transition: all 0.2s linear 0s;
 
               &:before {
@@ -130,19 +136,10 @@
               &:hover {
                 text-indent: 30px;
 
-                @media screen and (max-width: 576px) {
-                  text-indent: 0;
-                }
-
                 &:before {
                   transform: scale(1, 1);
                   text-indent: 0;
                 }
-              }
-
-              a {
-                text-decoration: none;
-                color: white;
               }
             }
 
@@ -178,15 +175,6 @@
                 }
               }
 
-            }
-
-
-            @media screen and (max-width: 992px) {
-              transition: none;
-
-              &:before {
-                content: none !important;
-              }
             }
           }
         }
@@ -301,11 +289,16 @@
         content: '';
         position: absolute;
         top: 52px;
-        left: -24px;
+        left: -6px;
         right: -15px;
         bottom: -15px;
         border-left: #ECC03B 6px solid;
+
+        @media screen and (max-width:992px) {
+          display: none !important;
+        }
       }
+
     }
 
     .second-part {
@@ -317,9 +310,13 @@
         position: absolute;
         top: 52px;
         left: -15px;
-        right: -24px;
+        right: -6px;
         bottom: -15px;
         border-right: #ECC03B 6px solid;
+
+        @media screen and (max-width:992px) {
+          display: none !important;
+        }
       }
 
       h1 {
