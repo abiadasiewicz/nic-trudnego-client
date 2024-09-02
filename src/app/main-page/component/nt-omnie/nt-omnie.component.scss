@@ -1,6 +1,13 @@
 :host {
   section {
-    margin: 48px auto;
+    margin: 0 auto;
+    padding: 48px 0;
+
+    &.about-section {
+      margin: 0 auto;
+      max-width: 1920px;
+      align-content: center;
+    }
 
     h1.primary {
       padding-top: 64px;
@@ -22,6 +29,36 @@
       border-radius: 20px;
       box-shadow: 10px 10px 10px rgba(128, 130, 132, 0.5);
       background-color: white;
+    }
+
+    &.about-section {
+      background: url('/assets/img/Werka-z-bialym.png');
+      background-size: cover;
+      position: relative;
+      z-index: 0;
+
+      @media screen and (max-width: 992px) {
+        background: none;
+      }
+
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        height: 100%;
+        background: linear-gradient(to left, white 0, 2%, transparent 30%, rgba(255, 255, 255) 60%,);
+        z-index: -1;
+
+        @media screen and (max-width: 1400px) {
+          background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255) 50%);
+        }
+        @media screen and (max-width: 1400px) {
+          background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255) 50%);
+        }
+      }
     }
 
     .about {
@@ -201,7 +238,7 @@
   .courses {
     position: relative;
     height: 600px;
-    padding-top: 36px;
+    padding-top: 12px;
     margin-bottom: 0;
 
     &::before {
