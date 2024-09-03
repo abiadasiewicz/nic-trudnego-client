@@ -1,13 +1,12 @@
 :host {
   $logo-size: 248px;
+  $circle-diameter: 68px;
 
   .contact {
-    padding-top: 12px;
+
     margin-bottom: 0;
 
-
     .gray {
-      height: $logo-size/2 + 20px;
       background-color: var(--nt-background-gray);
     }
 
@@ -18,23 +17,22 @@
         position: absolute;
         content: '';
         z-index: -1;
-        width: 100vw;
+        width: 100%;
         height: 100%;
         background-color: var(--nt-background-red-primary);
       }
     }
+
 
     .detailed {
       position: relative;
 
       img {
         position: absolute;
-        top: -$logo-size/2;
         left: 0;
         right: 0;
         margin-left: auto;
         margin-right: auto;
-        max-width: $logo-size;
         width: auto;
         height: auto;
       }
@@ -43,45 +41,159 @@
         color: var(--nt-white);
         max-width: 600px;
         font-weight: bolder;
-        padding-top: $logo-size/3
       }
 
-      .adress {
+      .details {
         color: var(--nt-white);
         text-align: center;
         max-width: 800px;
         width: 100%;
-        margin-bottom: 24px;
+        padding: 60px 0;
 
-        h2 {
-          margin-bottom: 2px;
-        }
+        .detailed {
 
-        i {
-          font-size: 32px;
-          position: relative;
-          z-index: 5;
+          h2 {
+            margin-bottom: 2px;
+          }
 
-          &:after {
-            $circle-diameter: 68px;
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: $circle-diameter;
-            height: $circle-diameter;
-            margin-left: -$circle-diameter/2;
-            margin-top: -$circle-diameter/2;
-            border-radius: 50%;
-            background-color: var(--nt-red-70);
-            z-index: -1;
+          i {
+            font-size: 32px;
+            width: fit-content;
+            position: relative;
+            z-index: 5;
+
+            &:after {
+              content: '';
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              width: $circle-diameter;
+              height: $circle-diameter;
+              margin-left: -$circle-diameter/2;
+              margin-top: -$circle-diameter/2;
+              border-radius: 50%;
+              background-color: var(--nt-red-70);
+              z-index: -1;
+            }
+          }
+
+          .white {
+            color: var(--nt-white);
+            margin-bottom: 2px;
           }
         }
+      }
+    }
 
-        .white {
-          color: var(--nt-white);
-          margin-bottom: 2px;
-          font-weight: lighter
+    .map {
+      background-color: var(--nt-background-gray);
+
+      .map-container {
+        height: 600px;
+        max-width: 1100px;
+        padding: 24px 0;
+      }
+
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .contact {
+      .gray {
+        height: $logo-size/4 + 20px;
+      }
+
+      .detailed {
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+          margin: auto;
+          padding-top: $logo-size/4 + 40px;
+
+
+        }
+
+        img {
+          top: -$logo-size/4;
+          max-width: $logo-size/2;
+        }
+
+        .details {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: start;
+          height: 360px;
+
+          .detailed {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            i {
+              margin-right: 32px;
+            }
+
+            h2 {
+              display: none;
+            }
+
+            p {
+              margin-right: 4px;
+              font-size: 18px;
+            }
+
+          }
+        }
+      }
+
+      .map {
+        .map-container {
+          height: 400px;
+          padding: 28px 14px;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .contact {
+      .gray {
+        height: $logo-size/2 + 20px;
+      }
+
+      .detailed {
+        img {
+          top: -$logo-size/2;
+          max-width: $logo-size;
+        }
+
+        h1 {
+          padding-top: $logo-size/3
+        }
+
+        h2 {
+          padding-top: 12px;
+        }
+
+        .comma {
+          display: none;
+        }
+
+        .details-container {
+          display: flex;
+          justify-content: center;
+
+          .details {
+            display: flex;
+            justify-content: space-around;
+
+            .white {
+
+              font-weight: lighter
+            }
+          }
         }
       }
     }

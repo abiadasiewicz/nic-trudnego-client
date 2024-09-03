@@ -27,14 +27,6 @@
       font-size: 14px;
     }
 
-    &.bordered {
-      padding: 16px;
-      border: solid 1px var(--nt-text-black);
-      border-radius: 20px;
-      box-shadow: 10px 10px 10px rgba(128, 130, 132, 0.5);
-      background-color: white;
-    }
-
     &.about-section {
       background: url('/assets/img/Werka-z-bialym.png');
       background-size: cover;
@@ -53,15 +45,15 @@
         bottom: 0;
         right: 0;
         height: 100%;
-        background: linear-gradient(to left, white 0, 2%, transparent 30%, rgba(255, 255, 255) 60%,);
+        background: linear-gradient(to left, white 0, 2%, transparent 30%, var(--nt-white) 60%, );
         z-index: -1;
 
         @media screen and (max-width: 1400px) {
-          background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255) 50%);
+          background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
         }
 
         @media screen and (max-width: 1400px) {
-          background: linear-gradient(to left, transparent 25%, rgba(255, 255, 255) 50%);
+          background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
         }
       }
     }
@@ -260,7 +252,7 @@
   }
 
   .more-info-section {
-    background-color: rgba(182, 182, 182, 0.11);
+    background-color: var(--nt-background-gray);
     margin-top: -12px;
     padding-bottom: 124px;
     margin-bottom: 0;
