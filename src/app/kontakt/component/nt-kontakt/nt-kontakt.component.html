@@ -1,33 +1,38 @@
 <section class="contact">
     <div class="gray"></div>
-    <section class="container detailed px-3 px-sm-2">
-        <img src="../../../../assets/img/logotyp.png" alt="Logotyp gabinetu">
+    <div class="red">
         <section class="container detailed px-3 px-sm-2">
-            <h1>Kontakt</h1>
-            <div class="details-container d-flex justify-content-center">
-                <div class="adress d-flex">
-                    <div>
-                        <i class="bi bi-geo-alt-fill"></i>
-                        <h2>Adres</h2>
-                        <p class="white">Kaczeńcowa 2</p>
-                        <p class="white">51-180 Wrocław</p>
-                    </div>
-                    <div>
-                        <i class="bi bi-geo-alt-fill"></i>
-
-                        <h2>Adres</h2>
-                        <p class="white">Kaczeńcowa 2</p>
-                        <p class="white">51-180 Wrocław</p>
-                    </div>
-                    <div>
-                        <i class="bi bi-geo-alt-fill"></i>
-
-                        <h2>Adres</h2>
-                        <p class="white">Kaczeńcowa 2</p>
-                        <p class="white">51-180 Wrocław</p>
+            <img src="../../../../assets/img/logotyp.png" alt="Logotyp gabinetu">
+            <section class="container detailed px-3 px-sm-2">
+                <h1>Kontakt</h1>
+                <div class="details-container d-flex justify-content-center">
+                    <div class="adress d-flex justify-content-around py-5">
+                        <div>
+                            <i class="bi bi-telephone-fill"></i>
+                            <h2 class="mt-2">Telefon</h2>
+                            <p class="white">+48 535 366 936</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <h2 class="mt-2">Adres</h2>
+                            <p class="white">Kaczeńcowa 2</p>
+                            <p class="white">51-180 Wrocław</p>
+                        </div>
+                        <div>
+                            <i class="bi bi-envelope-fill"></i>
+                            <h2 class="mt-2">Mail</h2>
+                            <a class="white" href="mailto: werwojsa@gmail.com">werwojsa@gmail.com</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+                    <div class = "map">
+                        <google-map   height="500px"
+                                      width="100%"
+                                      [zoom]="zoom"
+                                      [center]="center"
+                                      [options]="options"></google-map>
+                    </div>
         </section>
-    </section>
+    </div>
 </section>
