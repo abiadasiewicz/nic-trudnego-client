@@ -96,7 +96,10 @@
                             "src/assets"
                         ],
                         "styles": [
-                            "src/styles.scss"
+                            "src/styles.scss",
+                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
+                            "node_modules/primeng/resources/themes/arya-purple/theme.css",
+                            "node_modules/primeng/resources/primeng.min.css"
                         ],
                         "scripts": []
                     }
@@ -105,6 +108,6 @@
         }
     },
     "cli": {
-      "analytics": false
+        "analytics": false
     }
 }

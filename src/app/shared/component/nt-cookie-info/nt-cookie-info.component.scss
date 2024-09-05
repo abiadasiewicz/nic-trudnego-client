@@ -1,0 +1,19 @@
+:host {
+    .container {
+        max-width: 900px;
+    }
+
+    h1 {
+        color: var(--nt-text-primary);
+    }
+
+    h5,
+    h4 {
+        color: var(--nt-black);
+    }
+
+    p,
+    ul {
+        color: var(--nt-gray-text)
+    }
+}

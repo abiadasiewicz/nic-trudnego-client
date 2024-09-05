@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="d-flex logo">
-        <img src="/assets/img/logo-big.png" alt="Logo gabinetu">
-        <div class = "phone"><i class="mx-2 bi bi-telephone-fill"></i>+48 535 366 936</div>
+        <img src="/assets/img/logo-big.png" alt="Logo gabinetu" [routerLink]="'/'">
+        <div class="phone"><i class="mx-2 bi bi-telephone-fill"></i>+48 535 366 936</div>
     </div>
     <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="icon-bar top-bar"></span>
         <span class="icon-bar middle-bar"></span>
         <span class="icon-bar bottom-bar"></span>
@@ -13,19 +13,19 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" aria-current="page" [routerLink]="'/o-mnie'" data-bs-toggle="collapse"
-                   data-bs-target=".navbar-collapse.show" routerLinkActive="active">O mnie</a>
+                    data-bs-target=".navbar-collapse.show" routerLinkActive="active">O mnie</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="'/oferta'" data-bs-toggle="collapse"
-                   data-bs-target=".navbar-collapse.show" routerLinkActive="active">Oferta</a>
+                    data-bs-target=".navbar-collapse.show" routerLinkActive="active">Oferta</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="'/cennik'" data-bs-toggle="collapse"
-                   data-bs-target=".navbar-collapse.show" routerLinkActive="active">Cennik</a>
+                    data-bs-target=".navbar-collapse.show" routerLinkActive="active">Cennik</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" [routerLink]="'/kontakt'" data-bs-toggle="collapse"
-                   data-bs-target=".navbar-collapse.show" routerLinkActive="active">Kontakt</a>
+                    data-bs-target=".navbar-collapse.show" routerLinkActive="active">Kontakt</a>
             </li>
         </ul>
     </div>
