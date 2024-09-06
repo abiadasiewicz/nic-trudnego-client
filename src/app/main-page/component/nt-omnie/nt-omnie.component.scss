@@ -262,6 +262,10 @@
     display: flex;
     flex-direction: column;
 
+    h1 {
+      color: var(--nt-text-primary);
+    }
+
     .content {
       font-style: italic;
       width: 80%;
@@ -270,11 +274,15 @@
         font-size: 20px;
         text-align: justify;
         text-justify: inter-word;
+        color: var(--nt-text-black)
 
       }
 
       @media screen and (max-width: 992px) {
         width: 100%;
+        p{
+          font-size: 16px;
+        }
       }
     }
 
@@ -300,6 +308,7 @@
     .second-part {
       float: right;
       position: relative;
+
 
       &:after {
         content: '';

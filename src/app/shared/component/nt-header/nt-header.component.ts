@@ -6,4 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./nt-header.component.scss']
 })
 export class NtHeaderComponent {
+  collapse() {
+    const element = document.getElementById('navbarToggler');
+    element?.classList.add('collapsed')
+  }
 }

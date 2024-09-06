@@ -16,9 +16,12 @@
           height: 100% !important;
 
           .p-carousel-container {
-            padding-top: 60px;
-            height: 60% !important;
+            padding-top: 40px;
+            height: 100% !important;
 
+            @media screen and (max-width: 576px){
+              height: 80% !important;
+            }
             button {
               &.p-ripple {
                 background-color: transparent;
@@ -39,13 +42,16 @@
           }
 
           .p-carousel-indicators {
-            padding-top: 120px;
+            padding-top: 100px;
+
+            @media screen and (max-width: 576px){
+              padding-top: 60px;
+            }
           }
 
           .p-carousel-indicator {
 
             button {
-              background-color: white;
               border-radius: 8px;
               max-width: 60px;
               height: 3px;
@@ -55,7 +61,6 @@
             &.p-highlight {
               button {
                 background-color: var(--nt-red-70);
-                ;
               }
             }
           }
@@ -90,6 +95,10 @@
       color: var(--nt-text-secondary);
       font-weight: bold;
       font-size: 18px;
+
+      @media screen and (max-width: 576px){
+        font-size: 16px;
+      }
     }
   }
 }
