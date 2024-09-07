@@ -1,1 +1,45 @@
-<p>nt-cennik works!</p>
+<section class="pricelist">
+    <div class="gray"></div>
+    <div class="red">
+        <section class="container header ps-3 pe-0 px-sm-2 d-flex justify-content-center align-items-center">
+            <h1>Cennik</h1>
+        </section>
+    </div>
+    <section class="container details mt-5">
+        <div class="bordered in-office">
+            <div class="title">
+                <p class="d-flex align-items-center">
+                    <i class="bi bi-geo-alt-fill"></i>W gabinecie
+                </p>
+            </div>
+            <ng-container *ngFor="let offer of priceListOnSiteConfig">
+                <div class="single-offer">
+                    <p class="black">{{offer.title}}</p>
+                    <p class="black price">{{offer.price}}zł<span class="badge ms-1">{{offer.duration}} min</span></p>
+                </div>
+            </ng-container>
+        </div>
+        <div class="bordered offboard">
+            <div class="title">
+                <p class="d-flex align-items-center">
+                    <i class="bi bi-car-front-fill"></i>Z dojazdem
+                </p>
+            </div>
+            <ng-container *ngFor="let offer of priceListAwayConfig">
+                <div class="single-offer">
+                    <p class="black">{{offer.title}}</p>
+                    <p class="black price">{{offer.price}}zł<span class="badge ms-1">{{offer.duration}} min</span></p>
+                </div>
+            </ng-container>
+        </div>
+    </section>
+    <section class="mt-4 description">
+        <div class="description-container container">
+            <p class="black">Czas trwania terapii logopedycznej wchodzi 40 minut zajęć oraz 5 minut poświęconych na
+                omówienie
+                z rodzicem spotkania oraz przedstawienie zaleceń dotyczących pracy w warunkach domowych.</p>
+            <p class="black">Oferta terapii z dojazdem skierowana jest do mieszkańców osiedli Lipa Piotrowska oraz
+                Widawa.</p>
+        </div>
+    </section>
+</section>

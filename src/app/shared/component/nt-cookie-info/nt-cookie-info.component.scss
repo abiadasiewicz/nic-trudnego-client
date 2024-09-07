@@ -1,6 +1,8 @@
 :host {
     .container {
         max-width: 900px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid var(--nt-text-primary);
     }
 
     h1 {

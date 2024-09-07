@@ -1,0 +1,42 @@
+:host {
+    .offer {
+        margin-bottom: 0;
+
+
+        .gray {
+            background-color: var(--nt-background-gray);
+            height: 144px;
+        }
+
+        .red {
+            background-color: var(--nt-background-red-primary);
+
+            h1 {
+                margin: 0;
+                padding: 64px 0;
+                color: var(--nt-white)
+            }
+        }
+
+        .offers-container {
+            max-width: 900px;
+            margin: auto;
+            width: 100%;
+            display: grid;
+            gap: 32px;
+            grid-template-columns: repeat(auto-fit, 250px);
+            justify-content: center;
+
+            .card {
+                img {
+                    color: var(--nt-gray-text)
+                }
+
+                text-align: center;
+                // border-color: transparent;
+                height: 160px;
+            }
+
+        }
+    }
+}

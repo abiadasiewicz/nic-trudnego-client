@@ -1,0 +1,101 @@
+:host {
+    .pricelist {
+        margin-bottom: 0;
+
+
+        .gray {
+            height: 144px;
+            background-color: var(--nt-background-gray);
+        }
+
+        .red {
+            background-color: var(--nt-background-red-primary);
+
+            h1 {
+                margin: 0;
+                padding: 64px 0;
+                color: var(--nt-white)
+            }
+        }
+
+        .details {
+            max-width: 900px;
+
+            .bordered {
+                $icon-size: 24px;
+                $border-size: 2px;
+                border: $border-size solid var(--nt-border-gray);
+                border-radius: 8px;
+                position: relative;
+
+                @media screen and (max-width: 576px) {
+                    padding: 28px 16px;
+                }
+
+                @media screen and (min-width: 576px) {
+                    padding: 48px 32px;
+                }
+
+                .title {
+                    position: absolute;
+                    top: calc(-1 * ($icon-size/2) - $border-size - 1px);
+                    left: 0;
+                    right: 0;
+                    margin-inline: auto;
+                    width: fit-content;
+                    background-color: var(--nt-white);
+
+                    p {
+                        margin: 0;
+                        padding: 0 4px;
+                        color: var(--nt-border-gray);
+                        font-size: 14px;
+
+                        i {
+                            padding-right: 4px;
+                            font-size: $icon-size;
+                        }
+                    }
+                }
+
+                .single-offer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p {
+                        margin: 0;
+                        padding: 12px 0;
+
+                        &.price {
+                            display: flex;
+                            align-items: center;
+                        }
+
+                        .badge {
+                            font-size: 10px;
+                            background-color: var(--nt-text-primary);
+                            padding: 5px;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                &.in-office {
+                    margin-bottom: 48px;
+                }
+            }
+        }
+
+
+        .description {
+            background-color: var(--nt-background-gray);
+        }
+
+        .description-container {
+            margin: auto;
+            padding: 48px 12px;
+            max-width: 900px;
+        }
+    }
+}

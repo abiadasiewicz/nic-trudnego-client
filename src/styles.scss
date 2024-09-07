@@ -1,8 +1,5 @@
-@import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.scss';
 @import 'assets/custom-styles/color-variables.scss';
-@import "primeng/resources/primeng.css";
-@import "primeng/resources/themes/luna-amber/theme.css";
 
 * {
   font-family: 'Merriweather Sans', sans-serif;
@@ -36,4 +33,8 @@ h1.primary {
 
 p {
   color: var(--nt-text-primary);
+
+  &.black {
+    color: var(--nt-black);
+  }
 }

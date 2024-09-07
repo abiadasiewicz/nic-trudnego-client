@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { NtMainPageModule } from './main-page/nt-main-page.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FieldsetModule } from 'primeng/fieldset';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     RouterModule,
     NtMainPageModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FieldsetModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [FieldsetModule]
 })
 export class AppModule { }

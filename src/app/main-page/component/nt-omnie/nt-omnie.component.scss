@@ -275,19 +275,20 @@
         text-align: justify;
         text-justify: inter-word;
         color: var(--nt-text-black)
-
       }
 
       @media screen and (max-width: 992px) {
         width: 100%;
-        p{
+
+        p {
           font-size: 16px;
         }
       }
     }
 
-    .first-part {
+    .left {
       position: relative;
+      float: left;
 
       &:after {
         content: '';
@@ -305,7 +306,7 @@
 
     }
 
-    .second-part {
+    .right {
       float: right;
       position: relative;
 

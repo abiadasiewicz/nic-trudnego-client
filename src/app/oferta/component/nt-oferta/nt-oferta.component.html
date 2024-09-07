@@ -1,1 +1,21 @@
-<h1>Inne pierdki</h1>
+<section class="offer">
+    <div class="gray height"></div>
+    <div class="red">
+        <section class="container header ps-3 pe-0 px-sm-2 d-flex justify-content-center align-items-center">
+            <h1>Oferta</h1>
+        </section>
+    </div>
+    <section class="mt-3 py-5">
+        <div class="container offers-container">
+            <ng-container *ngFor="let offer of offerCardConfig">
+                <div class="card">
+                    <div class="card-body">
+                        <h1 class="card-title"><img src="../../../../assets/icons/{{offer.iconSrc}}" width="48px"
+                                height="48px"></h1>
+                        <p class="card-text"> {{offer.text}}</p>
+                    </div>
+                </div>
+            </ng-container>
+        </div>
+    </section>
+</section>
