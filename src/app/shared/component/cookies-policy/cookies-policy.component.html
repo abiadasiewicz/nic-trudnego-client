@@ -1,16 +1,14 @@
-<p-dialog [(visible)]="visible" [position]="'bottomleft'" [style]="{ width: '20rem' }" visibleChange="true">
-    <ng-template pTemplate="headless">
-        <div class="d-flex flex-column px-8 py-3 px-3 gap-2"
-            style="border-radius: 12px; background-color: var(--nt-white);">
-            <div class="flex align-items-center gap-2">
-                <p>Strona przechowuje pliki cookie na Twoim komputerze. Aby dowiedzieć się więcej o używanych przez nas
-                    plikach cookie, zapoznaj się z naszą <a [routerLink]="'cookie-policy'"
-                        (click)="visible = false">Polityką prywatności</a></p>
-            </div>
-            <div class="d-flex justify-content-end gap-2 buttons">
-                <button class="primary" (click)="acceptCookies()">Akceptuję</button>
-                <button class="secondary" (click)="rejectCookies()">Odrzucam</button>
-            </div>
+<p-dialog [(visible)]="visible" [position]="'bottomleft'" [style]="{ width: '20rem' }" visibleChange="true"
+    [showHeader]=false>
+    <div class="d-flex flex-column py-3 px-3 gap-2" style="border-radius: 12px; background-color: var(--nt-white);">
+        <div class="flex align-items-center gap-2">
+            <p>Strona przechowuje pliki cookie na Twoim komputerze. Aby dowiedzieć się więcej o używanych przez nas
+                plikach cookie, zapoznaj się z naszą <a [routerLink]="'cookie-policy'"
+                    (click)="visible = false">Polityką prywatności</a></p>
         </div>
-    </ng-template>
+        <div class="d-flex justify-content-end gap-2 buttons">
+            <button class="primary" (click)="acceptCookies()">Akceptuję</button>
+            <button class="secondary" (click)="rejectCookies()">Odrzucam</button>
+        </div>
+    </div>
 </p-dialog>

@@ -83,4 +83,17 @@
         color: var(--nt-text-primary);
         font-weight: bold;
     }
+
+    ::ng-deep.p-dialog-content:last-of-type {
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+    }
+
+    ::ng-deep {
+        .p-dialog-content {
+            padding: 12px;
+        }
+    }
 }
