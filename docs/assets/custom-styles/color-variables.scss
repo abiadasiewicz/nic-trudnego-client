@@ -1,0 +1,38 @@
+:root {
+  $red-primary: #D56062;
+  $red-highlight: #D3282B;
+  $red-secondary: #C83E41;
+  $red-70: rgba(213, 96, 98, 0.70);
+
+  $red-mild: #c99a9b;
+
+  $black-primary: #212529;
+
+  $white-primary: white;
+
+  $gray-primary: #F2F2F2;
+
+  $gray-dark: rgb(82, 82, 82);
+
+  $gray-light: rgba(182, 182, 182, 0.7);
+
+  $variables: (
+    text-primary: $red-primary,
+    text-highlight: $red-highlight,
+    text-secondary: $red-secondary,
+    background-red-primary: $red-mild,
+
+    red-70: $red-70,
+
+    text-black: $black-primary,
+    white: $white-primary,
+    background-gray: $gray-primary,
+    border-gray: $gray-light,
+
+    gray-text: $gray-dark,
+  );
+
+@each $color, $value in $variables {
+  --nt-#{$color}: #{$value};
+}
+}
