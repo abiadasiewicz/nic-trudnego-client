@@ -14,7 +14,7 @@ export class NtOfertaComponent {
     text: 'Nabywa mowę wolnej niż jego rówieśnicy'
   }, {
     iconSrc: 'mouth.svg',
-    text: 'Oddycha przez usta, śpi z otwartą buzią'
+    text: 'Oddycha przez usta lub śpi z otwartą buzią'
   }, {
     iconSrc: 'general_surgery.svg',
     text: 'Może potrzebować korekty wędzidełka języka'
@@ -27,6 +27,9 @@ export class NtOfertaComponent {
   }, {
     iconSrc: 'tongue.svg',
     text: 'Wysuwa język między zęby podczas mówienia'
+  }, {
+    iconSrc: 'hand.svg',
+    text: 'Ma trudności z pisaniem, łapaniem piłki czy używaniem sztućców'
   },]
 
 

@@ -5,7 +5,10 @@
 
         .gray {
             background-color: var(--nt-background-gray);
-            height: 144px;
+
+            &.height {
+                height: 144px;
+            }
         }
 
         .red {
@@ -18,25 +21,93 @@
             }
         }
 
-        .offers-container {
-            max-width: 900px;
-            margin: auto;
-            width: 100%;
-            display: grid;
-            gap: 32px;
-            grid-template-columns: repeat(auto-fit, 250px);
+        .header-container {
+            text-align: center;
+            display: flex;
             justify-content: center;
 
-            .card {
-                img {
-                    color: var(--nt-gray-text)
-                }
+            h4 {
+                font-style: italic;
+                font-weight: normal;
+                width: fit-content;
+                margin: 0;
 
-                text-align: center;
-                // border-color: transparent;
-                height: 160px;
+                a {
+                    color: var(--nt-text-primary);
+                }
             }
 
+            .decoration {
+                width: 2px;
+                height: 24px;
+                position: relative;
+                border-radius: 16px;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    transform: rotate(35deg);
+
+                    background-color: #ECC03B;
+                }
+
+            }
+        }
+
+        .details {
+            max-width: 1000px;
+            margin: auto;
+            width: 100%;
+
+
+            .offers-container {
+                display: grid;
+                gap: 32px;
+                justify-items: center;
+                grid-template-columns: repeat(auto-fit, minmax(min(100%, max(320px, calc(50% - 32px))), 1fr));
+
+
+
+                .card {
+                    border-color: var(--nt-background-red-primary);
+                    width: 100%;
+
+                    .card-body {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    img {
+                        color: var(--nt-gray-text);
+                        margin-right: 16px
+                    }
+
+                }
+            }
+
+            .additional-info {
+                .card {
+                    border: 2px solid #e9b61f;
+                    width: 100%;
+                    background-color: #f8efd6;
+
+                    i {
+                        font-size: 48px;
+                        color: #e9b61f;
+                        margin-right: 24px;
+                    }
+
+                    .card-body {
+                        display: flex;
+                        align-items: center;
+                        text-align: justify;
+                    }
+                }
+            }
         }
     }
 }
