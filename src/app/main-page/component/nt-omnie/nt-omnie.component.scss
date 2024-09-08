@@ -27,14 +27,30 @@
       font-size: 14px;
     }
 
-    &.about-section {
-      background: url('/assets/img/Werka-z-bialym.png');
-      background-size: cover;
+    .about {
       position: relative;
-      z-index: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
-      @media screen and (max-width: 992px) {
-        background: none;
+      // background: url('/assets/img/Werka-z-bialym.png');
+      .img {
+        position: absolute;
+        // width: 100%;
+        top: -48px;
+        bottom: -48px;
+        z-index: -2;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        @media screen and (max-width: 992px) {
+          // background: none;
+          display: none;
+        }
       }
 
 
@@ -42,26 +58,35 @@
         content: '';
         position: absolute;
         left: 0;
-        bottom: 0;
+        top: -48px;
+        bottom: -48px;
         right: 0;
-        height: 100%;
-        background: linear-gradient(to left, white 0, 2%, transparent 30%, var(--nt-white) 60%, );
+        // height: 100%;
+        background: linear-gradient(to right, transparent, transparent 99%, white);
+        // background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%, rgba(255, 255, 255, 1) 100%);
         z-index: -1;
 
-        @media screen and (max-width: 1400px) {
-          background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
-        }
-
-        @media screen and (max-width: 1400px) {
-          background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
+        @media screen and (min-width: 1400px) {
+          right: 10px
         }
       }
-    }
 
-    .about {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      &:after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: -48px;
+        bottom: -48px;
+        right: 0;
+        // height: 100%;
+        background: linear-gradient(to left, transparent 1%, white 99%);
+        // background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%, rgba(255, 255, 255, 1) 100%);
+        z-index: -1;
+
+        @media screen and (min-width: 1400px) {
+          left: 10px
+        }
+      }
 
       .text-container {
         flex: 50%;
