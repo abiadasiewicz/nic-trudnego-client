@@ -19,9 +19,10 @@
             padding-top: 40px;
             height: 100% !important;
 
-            @media screen and (max-width: 576px){
+            @media screen and (max-width: 576px) {
               height: 80% !important;
             }
+
             button {
               &.p-ripple {
                 background-color: transparent;
@@ -38,13 +39,21 @@
                   }
                 }
               }
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              &:focus-visible {
+                box-shadow: 0 0 0 0.2rem #BFDBFE;
+              }
             }
           }
 
           .p-carousel-indicators {
             padding-top: 100px;
 
-            @media screen and (max-width: 576px){
+            @media screen and (max-width: 576px) {
               padding-top: 60px;
             }
           }
@@ -56,6 +65,14 @@
               max-width: 60px;
               height: 3px;
               background-color: #d67b7dc0;
+
+              &:focus {
+                box-shadow: none;
+              }
+
+              &:focus-visible {
+                box-shadow: 0 0 0 0.2rem #BFDBFE;
+              }
             }
 
             &.p-highlight {
@@ -96,7 +113,7 @@
       font-weight: bold;
       font-size: 18px;
 
-      @media screen and (max-width: 576px){
+      @media screen and (max-width: 576px) {
         font-size: 16px;
       }
     }
