@@ -23,16 +23,8 @@
           bottom: 0;
           right: 0;
           height: 100%;
-          //background: linear-gradient(to left, white 0, 2%, transparent 30%, var(--nt-white) 60%, );
-          background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
-
-          @media screen and (max-width: 1400px) {
-            background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
-          }
-
-          @media screen and (max-width: 1400px) {
-            background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
-          }
+          max-width: 1720px;
+          background: linear-gradient(to left, var(--nt-white) 1%, transparent, var(--nt-white) 55%);
         }
 
         img {
