@@ -11,7 +11,7 @@ export class NtCennikComponent {
     price: 200,
     duration: 90
   }, {
-    title: 'Diagnoza logopedyczna',
+    title: 'Diagnoza neurologopedyczna',
     price: 200,
     duration: 90
   }, {
@@ -37,7 +37,7 @@ export class NtCennikComponent {
     price: 250,
     duration: 90
   }, {
-    title: 'Diagnoza logopedyczna',
+    title: 'Diagnoza neurologopedyczna',
     price: 250,
     duration: 90
   }, {

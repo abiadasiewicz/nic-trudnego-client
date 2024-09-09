@@ -7,85 +7,71 @@
       margin: 0 auto;
       max-width: 1920px;
       align-content: center;
-    }
-
-    h1.primary {
-      padding-top: 64px;
-      font-weight: bold;
-
-      @media screen and (max-width: 992px) {
-        padding-top: 0 !important;
-      }
-    }
-
-    h1.secondary {
-      color: var(--nt-text-primary);
-      padding-bottom: 24px;
-    }
-
-    p {
-      font-size: 14px;
-    }
-
-    .about {
       position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
 
-      // background: url('/assets/img/Werka-z-bialym.png');
       .img {
         position: absolute;
-        // width: 100%;
-        top: -48px;
-        bottom: -48px;
-        z-index: -2;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        z-index: -3;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 100%;
+          //background: linear-gradient(to left, white 0, 2%, transparent 30%, var(--nt-white) 60%, );
+          background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
+
+          @media screen and (max-width: 1400px) {
+            background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
+          }
+
+          @media screen and (max-width: 1400px) {
+            background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%);
+          }
+        }
 
         img {
+          max-width: 1720px;
           width: 100%;
           height: 100%;
+          top:0;
           object-fit: cover;
+          object-position: top right;
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
         }
+      }
+
+      h1.primary {
+        padding-top: 64px;
+        font-weight: bold;
 
         @media screen and (max-width: 992px) {
-          // background: none;
-          display: none;
+          padding-top: 0 !important;
         }
       }
 
-
-      &:before {
-        content: '';
-        position: absolute;
-        left: 0;
-        top: -48px;
-        bottom: -48px;
-        right: 0;
-        // height: 100%;
-        background: linear-gradient(to right, transparent, transparent 99%, white);
-        // background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%, rgba(255, 255, 255, 1) 100%);
-        z-index: -1;
-
-        @media screen and (min-width: 1400px) {
-          right: 10px
-        }
+      h1.secondary {
+        color: var(--nt-text-primary);
+        padding-bottom: 24px;
       }
 
-      &:after {
-        content: '';
-        position: absolute;
-        left: 0px;
-        top: -48px;
-        bottom: -48px;
-        right: 0;
-        // height: 100%;
-        background: linear-gradient(to left, transparent 1%, white 99%);
-        // background: linear-gradient(to left, transparent 25%, var(--nt-white) 50%, rgba(255, 255, 255, 1) 100%);
-        z-index: -1;
+      p {
+        font-size: 14px;
+      }
 
-        @media screen and (min-width: 1400px) {
-          left: 10px
-        }
+      .about {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        // background: url('/assets/img/Werka-z-bialym.png');
       }
 
       .text-container {
@@ -258,6 +244,7 @@
       height: 100%;
       background-size: cover;
       background-color: var(--nt-background-red-primary);
+      opacity: 0.8;
     }
 
     .detailed {
