@@ -17,11 +17,11 @@ export class NtOMnieComponent {
         firstDescription: 'Terapia ręki I i II stopnia. Diagnoza terapia warsztat',
         secondDescription: 'Terapia ręki III stopnia. Grafomotoryka'
     }, {
-        firstDescription: 'Psychomotoryka empowermentu',
+        firstDescription: 'Wybiórczość pokarmowa o podłożu sensoryczno-motorycznym',
         secondDescription: 'Metoda Ruchu Rozwijającego Weroniki Sherborne'
     }, {
-        firstDescription: 'Masaż logopedyczny i terapia manualna kompleksu ustno-twarzowego w praktyce. Holistyczny program wsparcia pacjenta z wyzwaniami',
-
+        firstDescription: 'Psychomotoryka empowermentu',
+        secondDescription: 'Masaż logopedyczny i terapia manualna kompleksu ustno-twarzowego w praktyce',
     },]
 
     scrollToCoursesSection() {
