@@ -5,31 +5,31 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://nic-trudnego.pl/</loc>
+        <loc>https://twojastrona.pl/</loc>
         <lastmod>2024-09-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://nic-trudnego.pl/o-mnie</loc>
+        <loc>https://twojastrona.pl/o-mnie</loc>
         <lastmod>2024-09-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://nic-trudnego.pl/oferta</loc>
+        <loc>https://twojastrona.pl/oferta</loc>
         <lastmod>2024-09-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://nic-trudnego.pl/cennik</loc>
+        <loc>https://twojastrona.pl/cennik</loc>
         <lastmod>2024-09-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://nic-trudnego.pl/kontakt</loc>
+        <loc>https://twojastrona.pl/kontakt</loc>
         <lastmod>2024-09-10</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.8</priority>
