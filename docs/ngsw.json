@@ -1,0 +1,111 @@
+{
+  "configVersion": 1,
+  "timestamp": 1726136907032,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/234.11ee2b2a64bdb539.js",
+        "/243.5c84046b2bd290b8.js",
+        "/272.9f9af71751faad62.js",
+        "/favicon.ico",
+        "/index.html",
+        "/main.ce225a7a267b497c.js",
+        "/manifest.webmanifest",
+        "/polyfills.1e74d1299a90a854.js",
+        "/runtime.ea5117156dabebab.js",
+        "/styles.59284cad4771caf6.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/custom-styles/color-variables.scss",
+        "/assets/icons/R.svg",
+        "/assets/icons/fruits.svg",
+        "/assets/icons/general_surgery.svg",
+        "/assets/icons/hand.svg",
+        "/assets/icons/icon.png",
+        "/assets/icons/low_level.svg",
+        "/assets/icons/mouth.svg",
+        "/assets/icons/tongue.svg",
+        "/assets/icons/tooth.svg",
+        "/assets/img/Werka-z-bialym.png",
+        "/assets/img/logo-big.png",
+        "/assets/img/logotyp.png",
+        "/assets/img/werkapoziomo.jpg",
+        "/assets/robots.txt",
+        "/assets/sitemap.xml",
+        "/bootstrap-icons.70a9dee9e5ab72aa.woff",
+        "/bootstrap-icons.bfa90bda92a84a6a.woff2",
+        "/color.dae87a04d07ca92b.png",
+        "/hue.8b1818380241e6ac.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/234.11ee2b2a64bdb539.js": "6f865ebe29d52625a1f70f380892021be1c7e980",
+    "/243.5c84046b2bd290b8.js": "e03640a2bbeff77cf9bad4618943382bcf71c88a",
+    "/272.9f9af71751faad62.js": "6fc65e43f5dc58cc3fa079396edf44e323839221",
+    "/assets/custom-styles/color-variables.scss": "3d1081282046928ff19ed87a5c3a7a8c5aa6bc19",
+    "/assets/icons/R.svg": "3383726143eb701feda77f14c3f1fe142a2493ab",
+    "/assets/icons/fruits.svg": "d118c0af9643038de2d26cd2068e7a646e70e801",
+    "/assets/icons/general_surgery.svg": "01ddcd7c902ab208f8fe3a3facc78f258226a034",
+    "/assets/icons/hand.svg": "24b4539a5741d0429a5d468641d01f5b34e8253b",
+    "/assets/icons/icon.png": "837339ff55087878df1938f6924c2864eee9bf8a",
+    "/assets/icons/low_level.svg": "2984a029cb1ca5345e2f1d5e897350f476cfca40",
+    "/assets/icons/mouth.svg": "571a073c240d5d1f5dc9f2064b4188a04c5c94f2",
+    "/assets/icons/tongue.svg": "22e7f7d540f19ec39949085fc674897a3a9ba2ce",
+    "/assets/icons/tooth.svg": "1d68624f5a96436096a6fc7f60effef372a3d6e2",
+    "/assets/img/Werka-z-bialym.png": "439954fdd1f71357dcf378de29af3bfc9af556ff",
+    "/assets/img/logo-big.png": "7e5e6f620f8b4739e6e79ba34f3cc16e3554cfdd",
+    "/assets/img/logotyp.png": "526177156cffb50f1a113d9be01c4381b6929ae1",
+    "/assets/img/werkapoziomo.jpg": "14be19d1a63dca86b6e5b5008e8eab9979e07cb5",
+    "/assets/robots.txt": "eccd9f605f4dd46ccd68f1226598f90fc4682b1d",
+    "/assets/sitemap.xml": "d9dd5edb9e46f539f2179bdbed598740372459cc",
+    "/bootstrap-icons.70a9dee9e5ab72aa.woff": "d5831fd39baf13aff7626e483b9a089730f18604",
+    "/bootstrap-icons.bfa90bda92a84a6a.woff2": "020c3c6f9280a315e8425d7f92e15bcd0cdda1b2",
+    "/color.dae87a04d07ca92b.png": "ff4c4bcb2207891b292f544edb4da9d2df5d45cf",
+    "/favicon.ico": "c7008df833fa26ed41018ac73985868aad8ec178",
+    "/hue.8b1818380241e6ac.png": "f81ae627637a684614aa726e206c73ce099a01fd",
+    "/index.html": "1d315a537ec61f3a48f0565f81322c923a834609",
+    "/main.ce225a7a267b497c.js": "6971d6f4c9b381772fedcba988d0a6aebbb6e1b8",
+    "/manifest.webmanifest": "6ba5f6c992051750c0e04a6578cc889cd95d990b",
+    "/polyfills.1e74d1299a90a854.js": "0974c2e167d9c90edd1462df71efe3730fdda3c9",
+    "/runtime.ea5117156dabebab.js": "912ff06388ac953d8b44695e261f8518096f9272",
+    "/styles.59284cad4771caf6.css": "4f127f8a683421a1162c0c8c855a716bd8cda145"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
