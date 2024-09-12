@@ -33,6 +33,8 @@ export class NtOfertaComponent {
   },]
 
 
+
+
 }
 
 type OfferCardConfig = {

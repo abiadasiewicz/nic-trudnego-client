@@ -17,7 +17,7 @@ export class CookiesPolicyComponent {
     this.visible = false;
   }
   rejectCookies() {
-    this.cookieService.set('cookies_policy_rejected', 'false', 365);
+    this.cookieService.set('cookies_policy_rejected', 'true', 365);
     this.visible = false;
   }
 }
