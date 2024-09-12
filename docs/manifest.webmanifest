@@ -1,6 +1,6 @@
 {
-  "name": "nic-trudnego-client",
-  "short_name": "nic-trudnego-client",
+  "name": "nic-trudnego",
+  "short_name": "nic-trudnego",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
