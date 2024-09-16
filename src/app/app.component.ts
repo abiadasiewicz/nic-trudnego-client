@@ -16,7 +16,7 @@ export class AppComponent {
     // Set global meta tags (if applicable)
     this.meta.addTags([
       { name: 'description', content: 'Weronika Biadasiewicz - neurologopeda, specjalistka w terapii zaburzeń mowy.' },
-      { name: 'keywords', content: 'neurologopeda, logopeda, terapia mowy, zaburzenia mowy, terapia dla dzieci, terapia logopedyczna, dyslalia, opóźniony rozwój mowy, autyzm, spektrum autyzmu, terapia dla dorosłych, wybiórczość pokarmowa' },
+      { name: 'keywords', content: 'neurologopeda, logopeda, terapia mowy, zaburzenia mowy, terapia dla dzieci, terapia logopedyczna, dyslalia, opóźniony rozwój mowy, autyzm, spektrum autyzmu, terapia dla dorosłych, wybiórczość pokarmowa, nic trudnego, Weronika Biadasiewicz, nic-trudnego, Lipa Piotrowska, Wrocław, Wroclaw, Psie Pole, Widawa, Świniary,' },
       { name: 'robots', content: 'index, follow' },
     ]);
 
