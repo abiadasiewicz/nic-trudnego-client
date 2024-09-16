@@ -1,34 +1,40 @@
 import {Component, OnInit, Renderer2} from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import {PrimeNGConfig} from 'primeng/api';
 import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+    selector: 'app-root',
+    templateUrl: './app.component.html',
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor(
-      private title: Title,
-      private meta: Meta,
-      private renderer: Renderer2
-  ) {
-    // Set global meta tags (if applicable)
-    this.meta.addTags([
-      { name: 'description', content: 'Weronika Biadasiewicz - neurologopeda, specjalistka w terapii zaburzeń mowy.' },
-      { name: 'keywords', content: 'neurologopeda, logopeda, terapia mowy, zaburzenia mowy, terapia dla dzieci, terapia logopedyczna, dyslalia, opóźniony rozwój mowy, autyzm, spektrum autyzmu, terapia dla dorosłych, wybiórczość pokarmowa, nic trudnego, Weronika Biadasiewicz, nic-trudnego, Lipa Piotrowska, Wrocław, Wroclaw, Psie Pole, Widawa, Świniary,' },
-      { name: 'robots', content: 'index, follow' },
-    ]);
+    constructor(
+        private title: Title,
+        private meta: Meta,
+        private renderer: Renderer2
+    ) {
+        // Set global meta tags (if applicable)
+        this.meta.addTags([
+            {
+                name: 'description',
+                content: 'Weronika Biadasiewicz - neurologopeda, specjalistka w terapii zaburzeń mowy.'
+            },
+            {
+                name: 'keywords',
+                content: 'neurologopeda, logopeda, terapia mowy, zaburzenia mowy, terapia dla dzieci, terapia logopedyczna, dyslalia, opóźniony rozwój mowy, autyzm, spektrum autyzmu, terapia dla dorosłych, wybiórczość pokarmowa, nic trudnego, Weronika Biadasiewicz, nic-trudnego, Lipa Piotrowska, Wrocław, Wroclaw, Psie Pole, Widawa, Świniary, Różanka, Osobowice, Kaczeńcowa, Pełczyńska'
+            },
+            {name: 'robots', content: 'index, follow'},
+        ]);
 
-    this.title.setTitle('Weronika Biadasiewicz - Neurologopeda | Logopeda dla dzieci i dorosłych');
+        this.title.setTitle('Weronika Biadasiewicz - Neurologopeda | Logopeda dla dzieci i dorosłych');
 
-    this.addStructuredData();
-  }
+        this.addStructuredData();
+    }
 
-  addStructuredData() {
-    const script = this.renderer.createElement('script');
-    script.type = 'application/ld+json';
-    script.text = `
+    addStructuredData() {
+        const script = this.renderer.createElement('script');
+        script.type = 'application/ld+json';
+        script.text = `
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -50,6 +56,6 @@ export class AppComponent {
         "streetAddress": "Kaczeńcowa 2"
       }
     }`;
-    this.renderer.appendChild(document.head, script);
-  }
+        this.renderer.appendChild(document.head, script);
+    }
 }
