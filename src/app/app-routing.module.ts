@@ -11,7 +11,6 @@ export const appRoutes: Routes = [
     },
     {
         path: 'o-mnie',
-
         loadChildren: () =>
             import('./main-page/nt-main-page.module').then((module) => module.NtMainPageModule),
     }, {
