@@ -8,45 +8,45 @@ import { Component } from '@angular/core';
 export class NtCennikComponent {
   priceListOnSiteConfig: PriceListConfig[] = [{
     title: 'Diagnoza logopedyczna',
-    price: 200,
+    price: 240,
     duration: 90
   }, {
     title: 'Diagnoza neurologopedyczna',
-    price: 200,
+    price: 240,
     duration: 90
   }, {
     title: 'Terapia logopedyczna',
-    price: 120,
+    price: 140,
     duration: 45
   }, {
     title: 'Terapia neurologopedyczna',
-    price: 120,
+    price: 140,
     duration: 45
   }, {
     title: 'Terapia ręki - diagnoza',
-    price: 200,
+    price: 240,
     duration: 90
   }, {
     title: 'Terapia ręki',
-    price: 120,
+    price: 140,
     duration: 90
   },]
 
   priceListAwayConfig: PriceListConfig[] = [{
     title: 'Diagnoza logopedyczna',
-    price: 250,
+    price: 300,
     duration: 90
   }, {
     title: 'Diagnoza neurologopedyczna',
-    price: 250,
+    price: 300,
     duration: 90
   }, {
     title: 'Terapia logopedyczna',
-    price: 200,
+    price: 230,
     duration: 45
   }, {
     title: 'Terapia neurologopedyczna',
-    price: 200,
+    price: 230,
     duration: 45
   },]
 }

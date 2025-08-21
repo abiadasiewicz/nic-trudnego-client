@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as dayjs from "dayjs";
 
 @Component({
   selector: 'nt-footer',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class NtFooterComponent {
 
+  getCurrentYear(): string {
+    return dayjs().year().toString();
+  }
 }
